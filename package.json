@@ -4,7 +4,9 @@
   "description": "インターンシップで作成する採用サイト",
   "main": "main.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "yarn test && rimraf dist && cpx ./src/main.js ./dist",
+    "deploy": "yarn build && clasp push && clasp open"
   },
   "repository": "git+https://github.com/a-nakamura1015/recruitment-site.git",
   "author": "a-nakamura@esm.co.jp",
@@ -16,5 +18,8 @@
   "devDependencies": {
     "@types/jest": "^24.0.21",
     "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "cpx": "^1.5.0"
   }
 }

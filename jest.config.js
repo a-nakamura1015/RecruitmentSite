@@ -6,7 +6,8 @@ module.exports = {
     'ts-jest': {
       diagnostics: false,
     },
-    SpreadsheetApp: {},
+    'SpreadsheetApp': {},
+    'PropertiesService': {}
   },
   moduleDirectories: [
     'node_modules',
