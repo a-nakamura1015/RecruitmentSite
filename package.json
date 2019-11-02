@@ -1,0 +1,20 @@
+{
+  "name": "recruitment-site",
+  "version": "1.0.0",
+  "description": "インターンシップで作成する採用サイト",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": "git+https://github.com/a-nakamura1015/recruitment-site.git",
+  "author": "a-nakamura@esm.co.jp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a-nakamura1015/recruitment-site/issues"
+  },
+  "homepage": "https://github.com/a-nakamura1015/recruitment-site#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.21",
+    "jest": "^24.9.0"
+  }
+}
