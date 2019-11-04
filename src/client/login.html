@@ -17,7 +17,14 @@
     </div>
     <div>
         <input type="button" value="ログイン" />
-        <input type="button" value="新規登録" />
+        <input type="button" value="新規登録" onclick="signUp()"/>
     </div>
+    <script>
+      function signUp() {
+        google.script.run.withSuccessHandler(function(url){
+          window.location.href = url;
+        }).getUrl('?page=signUp');
+      }
+    </script>
   </body>
 </html>
