@@ -16,10 +16,15 @@
         <input type="password" />
     </div>
     <div>
-        <input type="button" value="ログイン" />
+        <input type="button" value="ログイン" onclick="login()" />
         <input type="button" value="新規登録" onclick="signUp()"/>
     </div>
     <script>
+      function login() {
+        google.script.run.withSuccessHandler(function(url){
+          window.location.href = url;
+        }).geteUrl('?page=myPage');
+      }
       function signUp() {
         google.script.run.withSuccessHandler(function(url){
           window.location.href = url;
