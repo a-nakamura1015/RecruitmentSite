@@ -28,12 +28,12 @@
           return;
         }
         google.script.run.withSuccessHandler(function(url){
-          location.replace(url);
+          window.top.location.href = url;
         }).getUrl('?page=myPage');
       }
       function signUp() {
         google.script.run.withSuccessHandler(function(url){
-          location.replace(url);
+          window.top.location.href = url;
         }).getUrl('?page=signUp');
       }
     </script>
