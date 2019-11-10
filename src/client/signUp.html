@@ -34,8 +34,15 @@
         <input type="text" />
     </div>
     <div>
-        <input type="button" value="登録" />
-        <input type="button" value="戻る" />
+        <input type="button" value="登録" onclick="backToPrevious()" />
+        <input type="button" value="戻る" onclick="backToPrevious()" />
     </div>
+    <script>
+      function backToPrevious() {
+        google.script.run.withSuccessHandler(function(url) {
+          window.top.location.href = url;
+        }).getUrl();
+      }
+    </script>
   </body>
 </html>
